@@ -1,0 +1,138 @@
+Programming Lang developed by Google in 2007
+
+Opensourced in 2009.
+
+Why?
+
+Infrastucture changed a lot like 
+---------------------------------
+Multicore processors
+Cloud Infrastucture
+Big Networked Computation Clusters
+
+Most existing lang cannot take full advantage of it.
+
+Mutithreading is used to create App.
+
+Challenges of multithreading:
+
+Concurrency : dealing whith lot of processes at once.
+ like multipple users editing the same document.
+ multiple users booking at the same time.
+
+Developers need to write coded to prevent concurrency
+
+Disadvange of Concurrency mechanism:
+Complex code
+expensive and slow
+
+So, Go was designed to run on multicores and built to support concurrency
+Concurrency in Go is cheap and easy. 
+
+Main use Cases:
+---------------
+For performant Applications
+Running on scales and distributed systems.
+
+Characterstics of Go:
+---------------------
+Simple and readable like Python
+Efficiency and safety like C++
+Server-side or Backend Language
+
+Examples: Docker,Kuberneties,cockroach DB.
+
+Simple syntax ,easy to read and write.
+
+""It is a Complied Language.""
+
+===================================================================================================================
+install go 
+create a folder
+open it using vs code(code .)using cmd or manually
+then create a main.go file
+add the project as module by opening a new terminal and type "go mod init file-name"
+========================================================
+To run the file  "go rum main.go"
+
+=========================================================
+Data Types:
+uint means unsigned int:
+
+uint8
+uint16
+uint32
+uint64
+
+int8
+int16
+int32
+int64
+
+---------
+float32
+float64
+
+--------
+complex64
+complex128
+===================================================================
+To to read the data from user we use Scan with a pointer'&'
+As it used to take the address of the variable and store it there.
+
+Pointers are used in C and C++ 
+Java and Js doesn't show it explicitly to the user.
+
+var userName string
+	var userBooked uint
+	var userMail string
+	var userMobile string
+
+	fmt.Println("Enter Your Name:")
+	fmt.Scan(&userName)
+	fmt.Println("Enter No of Tickets:")
+	fmt.Scan(&userBooked)
+	fmt.Println("Enter Your Email:")
+	fmt.Scan(&userMail)
+	fmt.Println("Enter Your Mobile Number:")
+	fmt.Scan(&userMobile)
+----------------------------------------------------------------
+%v for value 
+%t for type
+these are used in Printf for formatting the string
+----------------------------------------------------------------
+Slices in Go
+If we keep size then it becomes array
+Slice is dynamic in nature.
+var bookings []string
+bookings = append(bookings, userName)
+ /*
+//bookings[0] = userName
+			firstNames:= []string{}
+			import "strings"
+			for _,booking := range booking{
+				names := strings.Fields(booking) //use to split words with space
+				firstNames = append(firstNames,names[])
+			}
+		*/
+
+If condition {
+===================
+==============
+}
+EX:
+---
+if remainingTickets == 0 {
+			fmt.Println("The Bus is Full")
+			break
+		}
+
+
+for{
+-------------------------
+-------------------
+---------
+for infinite loop
+}
+-------------------------------------------------------------------------------------------------------------------
+
