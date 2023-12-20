@@ -57,3 +57,8 @@ func main() {
 	}
 
 }
+PS C:\Users\N M K\Desktop\SW\Golang> git remote -v
+origin  https://github.com/Noor-30412/Go_Language.git (fetch)
+origin  https://github.com/Noor-30412/Go_Language.git (push)
+
+git remote set-url origin https://github.com/Noor-30412/Go_Language.git
