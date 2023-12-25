@@ -17,7 +17,7 @@ func main() {
 	fmt.Println("We have a total of ", vehicalTickets, "tickets and", remainingTickets, "are still available.")
 	fmt.Println("   Get Your Tickets Here    ")
 
-	for {
+	for remainingTickets>0 {
 		var userName string
 		var userBooked uint
 		var userMail string
